@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="card">
+    <!-- Üst Başlık -->
+    <div class="header">
+      <div class="logo-wrapper">
+        <div class="logo-icon">🛡️</div>
+        <div class="logo-text">
+          <h1>ClearAds</h1>
+          <p class="tagline">Temiz gezinme deneyimi</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ana Kontrol Kartı -->
+    <div class="main-card">
+      <div class="status-indicator">
+        <div class="status-dot active"></div>
+        <span class="status-text" id="status">Aktif</span>
+      </div>
+      
+      <div class="toggle-section">
+        <div class="toggle-label">
+          <h3>Reklam Engelleyici</h3>
+          <p>Reklamları otomatik olarak engeller</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="toggle" checked>
+          <span class="slider">
+            <span class="slider-circle"></span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Mevcut Site Bilgisi -->
+    <div class="current-site-card">
+      <div class="site-header">
+        <span class="site-icon">🌐</span>
+        <div class="site-info">
+          <h4 class="site-title">Bu Sitede</h4>
+          <p class="site-domain" id="current-domain">example.com</p>
+        </div>
+      </div>
+      <div class="site-stats">
+        <div class="site-stat">
+          <div class="site-stat-number" id="site-count">0</div>
+          <div class="site-stat-label">Bu sitede engellenen</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Genel İstatistikler -->
+    <div class="stats-card">
+      <div class="stat-item">
+        <div class="stat-number" id="total-count">0</div>
+        <div class="stat-label">Toplam engellenen</div>
+      </div>
+      <div class="stat-divider"></div>
+     
+    </div>
+
+    <!-- Footer Butonları -->
+    <div class="footer">
+      <button class="btn-secondary" id="settings">
+        <span>⚙️</span>
+        Ayarlar
+      </button>
+      <button class="btn-primary" id="whitelist">
+        <span>➕</span>
+        Beyaz Liste
+      </button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

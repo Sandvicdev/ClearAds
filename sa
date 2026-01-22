@@ -1,0 +1,8 @@
+ClearAds/
+│── manifest.json
+│── background.js
+│── rules.json
+│── popup.html
+│── popup.css
+│── popup.js
+│── icon.png
